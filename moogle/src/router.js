@@ -1,21 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
-
+import Films from './views/Films.vue'
+import Serials from './views/Serials.vue'
+import Favorites from './views/Favorites.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'films',
+      component: Films
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/serials',
+      name: 'serials',
+      component: Serials
     }
   ]
 })

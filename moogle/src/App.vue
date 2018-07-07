@@ -1,8 +1,10 @@
 <template>
   <div id="app">
+    <Navigation />
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/films">Films</router-link> |
+      <router-link to="/serials">Serials</router-link> |
+      <router-link to="/favorites">Favorites</router-link>
     </div>
     <router-view/>
   </div>
@@ -17,7 +19,8 @@
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  padding: 15px;
+  border-bottom: 2px solid #cfcfcf;
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -27,3 +30,12 @@
   }
 }
 </style>
+<script>
+  import Navigation from '@/components/Navigation.vue'
+  export default {
+  name: 'navigation',
+  components: {
+  Navigation
+  }
+  }
+</script>
